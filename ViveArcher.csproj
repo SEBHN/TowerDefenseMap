@@ -311,6 +311,8 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\ExplosionTrap.cs" />
+    <Compile Include="Assets\Scripts\FireArea.cs" />
+    <Compile Include="Assets\Scripts\FireTrap.cs" />
     <Compile Include="Assets\Scripts\ProjectileAI.cs" />
     <Compile Include="Assets\Scripts\SlowdownArea.cs" />
     <Compile Include="Assets\Scripts\SlowdownTrap.cs" />

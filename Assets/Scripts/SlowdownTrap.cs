@@ -4,11 +4,12 @@ public class SlowdownTrap : Trap
 {
     public GameObject slowdownArea;
     private bool isActive;
-
+    
     public override void TrapTriggered(GameObject enemy)
     {
         if(!isActive)
         {
+            GetComponent<MeshRenderer>().material = activeMaterial;
             isActive = true;
             // Activate second trigger area
             slowdownArea.SetActive(true);
@@ -19,6 +20,7 @@ public class SlowdownTrap : Trap
 
     private void DeactivateTrap()
     {
+        GetComponent<MeshRenderer>().material = inactiveMaterial;
         slowdownArea.SetActive(false);
         foreach(EnemyAI enemy in FindObjectsOfType<EnemyAI>())
         {

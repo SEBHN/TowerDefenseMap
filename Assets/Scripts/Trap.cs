@@ -7,6 +7,8 @@ public abstract class Trap : MonoBehaviour
 {
     public float duration;
     public float cooldown;
+    public Material activeMaterial;
+    public Material inactiveMaterial;
 
     private void OnTriggerEnter(Collider other)
     {

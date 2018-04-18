@@ -11,7 +11,10 @@ public class ExplosionTrap : Trap
         {
             if (enemy.tag == "Enemy")
             {
-                stunArea.SetActive(false);
+                GetComponent<MeshRenderer>().material = activeMaterial;
+                isActive = true;
+                // Activate second trigger area
+                stunArea.SetActive(true);
                 // Start timer
                 Invoke("DeactivateTrap", duration);
             }
@@ -20,6 +23,7 @@ public class ExplosionTrap : Trap
 
     private void DeactivateTrap()
     {
+        GetComponent<MeshRenderer>().material = inactiveMaterial;
         stunArea.SetActive(false);
         foreach (EnemyAI enemy in FindObjectsOfType<EnemyAI>())
         {
@@ -43,7 +47,7 @@ public class ExplosionTrap : Trap
         }
         if (cooldown <= 0.0f)
         {
-            cooldown = 4.0f;
+            cooldown = 5.0f;
         }
     }
 
