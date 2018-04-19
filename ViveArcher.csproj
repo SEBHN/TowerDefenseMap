@@ -317,6 +317,7 @@
     <Compile Include="Assets\Scripts\SlowdownArea.cs" />
     <Compile Include="Assets\Scripts\SlowdownTrap.cs" />
     <Compile Include="Assets\Scripts\SpawnController.cs" />
+    <Compile Include="Assets\Scripts\SpeechController.cs" />
     <Compile Include="Assets\Scripts\StunArea.cs" />
     <Compile Include="Assets\Scripts\TowerAI.cs" />
     <Compile Include="Assets\Scripts\Trap.cs" />

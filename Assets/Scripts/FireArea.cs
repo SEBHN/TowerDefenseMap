@@ -45,6 +45,7 @@ public class FireArea : MonoBehaviour
 
     private void ReactivateFire()
     {
+        enemiesInArea.Clear();
         isActive = false;
     }
 }
