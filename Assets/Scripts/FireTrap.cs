@@ -2,7 +2,7 @@
 
 public class FireTrap : Trap
 {
-    public GameObject stunArea;
+    public GameObject fireArea;
     private bool isActive;
 
     public override void TrapTriggered(GameObject enemy)
@@ -14,7 +14,7 @@ public class FireTrap : Trap
                 GetComponent<MeshRenderer>().material = activeMaterial;
                 isActive = true;
                 // Activate second trigger area
-                stunArea.SetActive(true);
+                fireArea.SetActive(true);
                 // Start timer
                 Invoke("DeactivateTrap", duration);
             }
@@ -24,7 +24,7 @@ public class FireTrap : Trap
     private void DeactivateTrap()
     {
         GetComponent<MeshRenderer>().material = inactiveMaterial;
-        stunArea.SetActive(false);
+        fireArea.SetActive(false);
         Invoke("ResetTrap", cooldown);
     }
 
@@ -45,11 +45,5 @@ public class FireTrap : Trap
         {
             cooldown = 5.0f;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
