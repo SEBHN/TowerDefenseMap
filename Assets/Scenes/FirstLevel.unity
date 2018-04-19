@@ -26905,7 +26905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 1
-  enemyPrefab: {fileID: 1194819767464110, guid: c29381ae53d9f5d469fd94991c9436e4,
+  counterToBig: 10
+  smallEnemyPrefab: {fileID: 1194819767464110, guid: c29381ae53d9f5d469fd94991c9436e4,
+    type: 2}
+  bigEnemyPrefab: {fileID: 1997638659456700, guid: 130a20bf8dee70c4185b3236a5a244d8,
     type: 2}
 --- !u!1 &1938769874
 GameObject:
